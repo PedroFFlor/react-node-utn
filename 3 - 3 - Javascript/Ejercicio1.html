@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        let distancia = parseInt(prompt('Ingrese la distancia que desea recorrer y le dire el mejor transporte:', ''))
+        let transporte = ''
+        if (isNaN(distancia) == true){
+            transporte = 'Ingrese una distancia valida'
+        } else if (distancia >= 0 && distancia <= 1000 ) {
+            transporte = 'vaya a pie'
+        } else if (distancia >= 1000 && distancia <= 10000) {
+            transporte = 'vaya en bicicleta'
+        } else if (distancia >= 10000 && distancia <= 30000) {
+            transporte = 'vaya en colectivo'
+        } else if (distancia >= 30000 && distancia <= 100000) {
+            transporte = 'vaya en auto'
+        } else {
+            transporte = 'vaya en avion'
+        } 
+        document.write(`<h1>${transporte}</h1>`)
+    </script>
+    <br />
+    <a href="./Ejercicio1.html">Quiero probar con otra distancia</a>
+    
+</body>
+</html>

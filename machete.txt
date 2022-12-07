@@ -1,0 +1,27 @@
+
+Es solamente para utilizar como herramienta.
+Deberia de tener usuarios(vendedores y admin), sin usuarios simplemente una invitacion con un formulario de contacto para enviar un representante.
+
+El admin tendria una seccion donde modifica - Condiciones - Ofertas(dto por cantidad) - Autoriza si cambiaron
+los precios de los productos con el parametro "EsOferta".
+
+home:           Pequeña Historia o Resumen, Noticias
+                una invitacion con un formulario de contacto para enviar un representante.
+
+ofertas:        lista de precios de los productos marcados con el parametro "EsOFerta". (pdf) (validar si detecta cambio de precio)
+                catalogo de ofertas es a mano con los productos con el parametro "EsOferta". (pdf) (validar si detecta cambio de precio)
+                Descuento por cantidad es un cuadrito de 4 filas por X columnas que se hace del panel del admin. (notificar si detecta cambio)
+
+carpeta:        es el formulario para hacer una carpeta. (usar parametro "EsWeb" para no duplicar productos) , link para descargar o compartir.
+                Usar css para imprimir solo la carpeta.
+
+condiciones:    son secciones que se agergan, quitan o modifican del panel del admin
+
+mapa:           es la capa mapa mostrado en un visor del map de maps.google.com.abreaaa
+
+panel:          Condiciones: Agregar, quitar o modificar cada seccion 
+                Ofertas: Descuento por cantidad y autorizar en caso de detectar cambio de precio
+                Home: Modificar Pequeña historia. Agregar, modificar o quitar Noticias.
+
+                al hacer click en algun titulo, los otros 2 se minimizan
+                si hay mas de una condicion que aparezcan todas para editar.

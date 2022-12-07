@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+aside{
+    width: 35%;
+    height: 100%;
+    /* background-color: #EEEEEE; */
+    float: left;
+    padding: 3%;
+    background: rgb(169,204,227);
+    background: linear-gradient(0deg, rgba(169,204,227,1) 0%, rgba(238,238,238,1) 100%);
+}
+body{
+    width: 21cm;
+    height: 29.7cm;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif
+}
+form > *{
+    padding: 5px;
+    margin: 5px;
+}
+form > textarea{
+    width: 100%;
+}
+h1{
+    margin: 15px 15px 5px 5px;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+h2{
+    margin: 20px 20px 5px 5px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+h3{
+    margin: 10px 10px 5px 5px;
+    font-style: italic;
+}
+hr{ 
+    width:2cm;
+    height: 5px;
+    border: none;
+    border-radius: 5%;
+    background-color: #21618C;
+    margin: 0px 0px 25px 5px ;
+    box-shadow: 5px 5px 3px 0px #000  ;
+}
+i {
+    margin: 0px 10px 0px 10px;
+}
+img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;   
+    box-shadow: 5px 5px 3px 0px #000  ;
+}
+main{
+    height: 100%;
+}
+p{
+    margin-left: 5px;
+}
+section{
+    width: 65%;
+    height: 100%;
+    /* background-color: #A9CCE3; */
+    float: right;
+    padding: 20px 15px;
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(169,204,227,1) 100%);
+}
+ul, ol{
+    list-style: none;
+}
+.form_name{
+    width: 100%;
+}
