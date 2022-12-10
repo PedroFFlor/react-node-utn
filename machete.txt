@@ -1,5 +1,5 @@
 
-Es solamente para utilizar como herramienta.
+Es solamente para utilizar como herramienta..
 Deberia de tener usuarios(vendedores y admin), sin usuarios simplemente una invitacion con un formulario de contacto para enviar un representante.
 
 El admin tendria una seccion donde modifica - Condiciones - Ofertas(dto por cantidad) - Autoriza si cambiaron
