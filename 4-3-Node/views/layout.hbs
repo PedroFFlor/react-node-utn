@@ -23,10 +23,10 @@
             <a class="navbar-brand col-2" href="#">
                 <img src="https://via.placeholder.com/100x50" alt="Logo">
             </a>
-            <form class="d-flex col-6" role="search">
+            <form action="/login" method="post" class="d-flex col-6" role="search">
                 <div class="input-group mb-3 fs-6">
-                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario">
-                    <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
+                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" name="user">
+                    <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña" name="pass">
                     <button class="btn btn-danger" type="submit">Entrar</button>
                 </div>
             </form>
@@ -48,12 +48,6 @@
                         </li>
                         <li class="nav-item nav-li">
                             <a class="nav-link" href="/contacto">Contacto</a>
-                        </li>
-                        <li class="nav-item nav-li">
-                            <a class="nav-link" href="/nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item nav-li">
-                            <a class="nav-link" href="/users">Users</a>
                         </li>
                     </ul>
                 </div>
