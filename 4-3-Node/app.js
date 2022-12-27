@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session')
+require('dotenv').config()
+var pool = require('./models/db')
 
 var indexRouter = require('./routes/index');
 var contactoRouter = require('./routes/contacto');
@@ -38,6 +40,12 @@ app.post('/login', (req, res, next) =>{
 app.use('/', indexRouter);
 app.use('/contacto', contactoRouter);
 app.use('/galeria', galeriaRouter);
+
+
+/* pool.query('select * from empleados').then(function (resultado) {
+  console.log(resultado)
+}) */
+
 
 
 // catch 404 and forward to error handler
