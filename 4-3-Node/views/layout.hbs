@@ -23,13 +23,22 @@
             <a class="navbar-brand col-2" href="#">
                 <img src="https://via.placeholder.com/100x50" alt="Logo">
             </a>
-            <form action="/login" method="post" class="d-flex col-6" role="search">
-                <div class="input-group mb-3 fs-6">
-                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" name="user">
-                    <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña" name="pass">
-                    <button class="btn btn-danger" type="submit">Entrar</button>
+            {{#if nombre}}
+                <div class="d-flex col-6">
+                      <h3>Bienvenido {{nombre}} <a href="/admin/logout">Salir</a></h3>
                 </div>
-            </form>
+            {{else }}
+                <form action="/login" method="post" class="d-flex col-6" role="search">
+                    <div class="input-group mb-3 fs-6">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" name="user">
+                        <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña" name="pass">
+                        <button class="btn btn-danger" type="submit">Entrar</button>
+                    </div>
+                </form>
+            {{/if}}
+            {{#if error}}
+                <p>Verifique mail y/o contraseña</p>
+            {{/if}}
         </div>
         <nav class="container-sm navbar navbar-dark navbar-expand-sm">
             <div class="container-fluid">
@@ -49,6 +58,11 @@
                         <li class="nav-item nav-li">
                             <a class="nav-link" href="/contacto">Contacto</a>
                         </li>
+                        {{#if admin}}
+                            <li class="nav-item nav-li">
+                                <a class="nav-link" href="/panel">Panel</a>
+                            </li>
+                        {{/if}}
                     </ul>
                 </div>
             </div>
